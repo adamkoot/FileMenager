@@ -79,6 +79,7 @@ app.post("/handleUpload", function (req, res) {
         
       }
       console.log(data);
+      res.redirect("/");
     } catch {
       let arr = {
         name: files.imagetoupload.name,
@@ -89,11 +90,11 @@ app.post("/handleUpload", function (req, res) {
       };
       data.push(arr);
       console.log(data);
+      res.redirect("/");
     }
-    // last.push(data[(Object.keys(files.imagetoupload).length) - 1])
-    // console.log(last)
+    
   });
-  res.redirect("/");
+  
 });
 
 app.set("views", path.join(__dirname, "views")); // ustalamy katalog views
