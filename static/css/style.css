@@ -1,0 +1,40 @@
+.nav {
+  justify-content: center;
+  display: flex;
+  background-color: blue;
+  width: 100%;
+}
+.nav > div {
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+.nav > div > a {
+  color: white;
+}
+
+.all {
+  display: flex;
+}
+table {
+  width: 100%;
+  text-align: center;
+}
+
+.left-side {
+  float: left;
+  width: 30vh;
+  justify-content: center;
+  text-align: center;
+  background-color: gray;
+  min-height: 80vh;
+}
+.right-side {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.form {
+  margin: 30px;
+}

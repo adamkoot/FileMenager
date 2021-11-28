@@ -1,0 +1,38 @@
+<div class="all">
+
+  <div class="left-side">
+    <h2>
+      filemanager
+    </h2>
+    <h2>
+      <a href="/deleteInfo">USUŃ DANE O PLIKACH Z TABLICY</a>
+    </h2>
+  </div>
+  <div class="right-side">
+
+    <table>
+      <tr>
+        <th>index</th>
+        <th>name</th>
+        <th>size</th>
+        <th>type</th>
+        <th>-</th>
+        <th>-</th>
+        <th>-</th>
+      </tr>
+      {{#each context}}
+        <tr>
+          <td>{{@index}}
+          </td>
+          <td>{{this.name}}
+          </td>
+          <td>{{this.size}}</td>
+          <td>{{this.type}}</td>
+          <td><form action="delete/{{@index}}" method="post"><input type="submit" value="DELETE"></form></td>
+          <td><form action="info/{{@index}}" method="post"><input type="submit" value="INFO"></form></td>
+         <td><form action="download/{{@index}}" method="post"><input type="submit" value="DOWNLOAD"></form></td>
+        </tr>
+      {{/each}}
+    </table>
+
+  </div></div>
